@@ -1,3 +1,8 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+#nav {
+  background-color: $secondary;
+}
+
+nav a:hover {
+  color: $text-color;
+  background-color: $highlight;
+}

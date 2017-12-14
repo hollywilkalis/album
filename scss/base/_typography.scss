@@ -4,4 +4,14 @@
 body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+
+}
+
+$font1: 'Hammersmith One', sans-serif;
+$font2: 'Viga', sans-serif;
+
+h1 {
+  font-family: $font2;
+  color: $primary;
+
 }

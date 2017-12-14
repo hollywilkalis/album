@@ -1,7 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
+$text-color: rgba(10, 9, 12, 1);
+$primary: rgba(96, 178, 229, 1);
+$secondary: rgba(240, 237, 238, 1);
+$tertiary: rgba(63, 64, 69, 1);
+$highlight: rgba(246, 189, 96, 1);
 
 
 
@@ -13,32 +17,6 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
 
 
 

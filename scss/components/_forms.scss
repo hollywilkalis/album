@@ -1,0 +1,29 @@
+.album-input {
+  background-color: $tertiary;
+  label {
+    font-size: 15px;
+  }
+  input {
+    background: none;
+    border: none;
+    border-bottom: 4px solid $highlight;
+    outline: none;
+    color: white;
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+      background-color: $tertiary;
+      color: white;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+body {
+  background-color: $tertiary;
+}

@@ -1,3 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+  background-color: $highlight;
+  border-color: $primary;
+  color: $text-color;
+  font-family: $font2;
+  width: 100%;
+  margin: 10px 0;
+
+}

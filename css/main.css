@@ -101,6 +101,11 @@ body {
   grid-column: 2 / span 1;
   grid-row: 1/ span 12; }
 
+.album-input {
+  position: fixed;
+  top: 5%;
+  padding: 15px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -504,5 +509,42 @@ template {
  */
 [hidden] {
   display: none; }
+
+#display {
+  display: flex;
+  flex-wrap: wrap; }
+  #display .gallery-item {
+    flex-basis: 300px;
+    min-height: 300px;
+    margin: 1vmin;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    border: black 2px solid;
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d; }
+    #display .gallery-item:hover {
+      transform: rotateY(180deg); }
+    #display .gallery-item .front, #display .gallery-item .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      font-size: 30px;
+      text-align: center;
+      line-height: 300px;
+      color: black; }
+    #display .gallery-item .front {
+      z-index: 2;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      backface-visibility: hidden; }
+    #display .gallery-item .back {
+      z-index: 1;
+      transform: rotateY(180deg);
+      backface-visibility: hidden; }
 
 /*# sourceMappingURL=main.css.map */

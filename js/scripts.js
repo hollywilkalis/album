@@ -16,6 +16,9 @@ $(function() {
       var newAlbum = new Album(inputCover, inputAlbum, inputName);
       console.log(newAlbum);
 
-      $("ul.album-list").append('<li><img src="' + newAlbum.cover + '"></li>');
+      $("section#display").append('<div class="gallery-item"><div class="front"></div><div class="back"></div></div>');
+      $(".gallery-item:last-child .front").css('background-image', 'url(' + newAlbum.cover +')');
+      $(".gallery-item:last-child .back").append("<h1>" + newAlbum.album + "</h1>");
+      $(".gallery-item:last-child .back").append("<h2>" + newAlbum.name + "</h2>");
   });
 });

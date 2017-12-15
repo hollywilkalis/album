@@ -1,5 +1,4 @@
 #display {
-  background-color: white;
   display: flex;
   // justify-content: space-around;
   align-items: center;
@@ -35,10 +34,11 @@
         background-repeat: no-repeat;
         // background-color: #ff0000;
         backface-visibility: hidden;
+        background-color: $secondary;
       }
       .back {
         z-index:1;
-        background-color: $tertiary;
+        background-color: $secondary;
         transform: rotateY(180deg);
         backface-visibility: hidden;
 
@@ -47,7 +47,7 @@
           color: $primary;
         }
         h2 {
-          color: $secondary;
+          color: $tertiary;
           font-size: 20px;
 
         }
